@@ -47,29 +47,34 @@ export class AppareilService {
     }
 
     addAppareil(name: string, status: string) {
-        const appareil = {
-            id: 0,
-            name: '',
-            status: ''
-        };
-        appareil.name = name;
-        appareil.status = status;
-        appareil.id = this.appareils[this.appareils.length - 1].id + 1;
-        this.appareils.push(appareil);
-        this.emitAppareilSubject();
+        return new Promise(
+            (resolve, reject) => {
+                const appareil = {
+                    id: 0,
+                    name: '',
+                    status: ''
+                };
+                appareil.name = name;
+                appareil.status = status;
+                appareil.id = this.appareils[this.appareils.length - 1].id + 1;
+                this.appareils.push(appareil);
+                this.saveAppareilsToServer().subscribe({
+                    next: () => {
+                        console.log('Enregistrement terminé !');
+                        resolve(true);
+                    },
+                    error: (error) => {
+                        console.error('Erreur de sauvegarde: ' + error);
+                        reject();
+                    }
+                });
+            }
+        )
     }
 
     saveAppareilsToServer() {
-        this.httpClient
-            .put('https://lugand-angular-test-default-rtdb.europe-west1.firebasedatabase.app/appareils.json', this.appareils)
-            .subscribe({
-                next: () => {
-                    console.log('Enregistrement terminé !');
-                },
-                error: (error) => {
-                    console.error('Erreur de sauvegarde: ' + error);
-                }
-            });
+        return this.httpClient
+            .put('https://lugand-angular-test-default-rtdb.europe-west1.firebasedatabase.app/appareils.json', this.appareils);
     }
 
     getAppareilsFromServer() {
@@ -77,7 +82,6 @@ export class AppareilService {
             .get<any[]>('https://lugand-angular-test-default-rtdb.europe-west1.firebasedatabase.app/appareils.json')
             .subscribe({
                 next: (response) => {
-                    console.log('Chargement terminé !');
                     this.appareils = response;
                     this.emitAppareilSubject();
                 },
