@@ -16,7 +16,7 @@
 - [53:14](https://www.youtube.com/watch?v=uYhAfgEwNWA&t=3194s): Chainer les pipes---- > fin app "basique"
 - [58:28](https://www.youtube.com/watch?v=uYhAfgEwNWA&t=3508s): Enrichir l'app avec: Service, Routing, Rxjs
 - [1:02:49](https://www.youtube.com/watch?v=uYhAfgEwNWA&t=3769s): Peupler un service avec méthodes et fonctions
-- [1:07:42](https://www.youtube.com/watch?v=uYhAfgEwNWA&t=4062s): F aire communiquer les services
+- [1:07:42](https://www.youtube.com/watch?v=uYhAfgEwNWA&t=4062s): Faire communiquer les services
 - [1:14:59](https://www.youtube.com/watch?v=uYhAfgEwNWA&t=4499s): Routing
 - [1:22:23](https://www.youtube.com/watch?v=uYhAfgEwNWA&t=4943s): Ajouter la navigation routerlink
 - [1:25:52](https://www.youtube.com/watch?v=uYhAfgEwNWA&t=5152s): Utiliser le router + auth simulé
