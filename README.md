@@ -1,4 +1,4 @@
-[Angular  from scratch ( A to Z )](https://www.youtube.com/watch?v=uYhAfgEwNWA&t)
+[Angular  from scratch ( A to Z )](https://www.youtube.com/watch?v=uYhAfgEwNWA)
 
 <img src="https://i.ytimg.com/vi/uYhAfgEwNWA/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBnV0FWNX65rqSCViVjR7TTQl1lMQ" alt="Angular  from scratch ( A to Z )" width="168"/>
 
