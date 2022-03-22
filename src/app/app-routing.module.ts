@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'auth', component: AuthComponent },
   { path: 'users', component: UserListComponent },
   { path: 'new-user', component: NewUserComponent },
-  { path: '', component: AppareilViewComponent },
+  { path: '', component: AppareilViewComponent, canActivate: [AuthGuardService] },
   { path: 'not-found', component: FourOhFourComponent },
   { path: '**', redirectTo: '/not-found' }
 ];
