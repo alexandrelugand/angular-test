@@ -1,4 +1,4 @@
-[Angular  from scratch ( A to Z )](https://dew217.fev.com/confluence/display/MORPHEE/Building+tools)
+[Angular  from scratch ( A to Z )](https://www.youtube.com/watch?v=uYhAfgEwNWA&t)
 
 <img src="https://i.ytimg.com/vi/uYhAfgEwNWA/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBnV0FWNX65rqSCViVjR7TTQl1lMQ" alt="Angular  from scratch ( A to Z )" width="168"/>
 
